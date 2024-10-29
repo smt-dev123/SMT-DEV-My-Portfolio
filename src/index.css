@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* html{
+    scroll-behavior: smooth;
+} */
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-fadeIn {
+    animation: fadeIn 1s ease forwards;
+  }
+  /* Add this to your CSS */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+#root { /* or the id/class of your main div */
+  height: 100vh;
+}
+
+/* Optionally, give the ParticleBackground a full size */
+.particle-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Send it to the back if needed */
+}
