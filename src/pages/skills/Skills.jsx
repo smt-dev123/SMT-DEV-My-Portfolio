@@ -104,7 +104,7 @@ const Skills = () => {
           Skills & Abilities
         </motion.h1>
         <motion.div
-          variants={fadeIn("left", 0.2)}
+          variants={fadeIn("up", 0.2)}
           initial="hidden"
           whileInView="show"
           viewport={{ once: false, amount: 0.7 }}
@@ -113,7 +113,7 @@ const Skills = () => {
           <div className="grid grid-cols-2 gap-2 lg:grid-cols-6 lg:gap-4">
             {skills.map((skill, index) => (
               <motion.div
-                variants={fadeIn("left", 0.4)}
+                variants={fadeIn("up", 0.4)}
                 initial="hidden"
                 whileInView="show"
                 viewport={{ once: false, amount: 0.7 }}
