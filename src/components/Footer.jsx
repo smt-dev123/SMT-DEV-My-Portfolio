@@ -30,7 +30,11 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="lg:col-span-2">
             <a onClick={() => scrollToSection("home")}>
-              <img src={MyLogo} alt="SMT-DEGV" className="w-44 mb-8 cursor-pointer" />
+              <img
+                src={MyLogo}
+                alt="SMT-DEGV"
+                className="w-44 mb-8 cursor-pointer"
+              />
             </a>
             <p className="text-gray-300 text-sm">
               Thank you for visiting my personal portfolio website. Connect with
@@ -73,7 +77,10 @@ const Footer = () => {
             <div className="mt-4">
               <ul className="flex gap-4">
                 <li>
-                  <a href="#">
+                  <a
+                    href="https://www.facebook.com/luysokmatra"
+                    target="_blank"
+                  >
                     <FaFacebook className="text-2xl text-white" />
                   </a>
                 </li>
@@ -83,12 +90,12 @@ const Footer = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="https://t.me/luysokmatra" target="_blank">
                     <FaTelegram className="text-2xl text-white" />
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="https://github.com/smt-dev123" target="_blank">
                     <FaGithub className="text-2xl text-white" />
                   </a>
                 </li>
@@ -98,7 +105,7 @@ const Footer = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="mailto:luysokmatra1@gamil.com" target="_blank">
                     <MdEmail className="text-2xl text-white" />
                   </a>
                 </li>
