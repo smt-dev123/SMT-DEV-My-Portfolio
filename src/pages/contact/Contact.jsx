@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Swal from "sweetalert2";
 import { fadeIn } from "../../assets/js/animation";
-import { IoIosSend } from "react-icons/io";
+// import { IoIosSend } from "react-icons/io";
 
 const Contact = () => {
   const [result, setResult] = React.useState("");
@@ -123,17 +123,33 @@ const Contact = () => {
                   required
                 ></motion.textarea>
 
+<<<<<<< HEAD
                 <motion.button
+=======
+                <motion.a
+                  href="mailto:luysokmatra1@gamil.com"
+                  target="_blank"
+>>>>>>> master
                   variants={fadeIn("left", 1.2)}
                   initial="hidden"
                   whileInView="show"
                   viewport={{ once: false, amount: 0.7 }}
+<<<<<<< HEAD
                   type="submit"
                   className="text-white w-full relative bg-blue-500 hover:bg-blue-600 rounded-md text-sm px-6 py-3 !mt-6"
                 >
                   <IoIosSend className="inline mr-2 text-2xl" />
                   Send Message
                 </motion.button>
+=======
+                  className="text-white w-full relative bg-blue-500 hover:bg-blue-600 rounded-md text-sm px-6 py-3 mt-6"
+                >
+                  <button type="button">
+                    {/* <IoIosSend className="inline mr-2 text-2xl" /> */}
+                    Send Message
+                  </button>
+                </motion.a>
+>>>>>>> master
               </div>
             </form>
           </div>
